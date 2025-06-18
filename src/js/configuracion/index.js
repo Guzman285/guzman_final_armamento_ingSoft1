@@ -10,7 +10,7 @@ const cargarConfiguracion = async () => {
     try {
         mostrarSpinners(true);
 
-        const url = '/proyecto01/configuracion/obtenerConfiguracionAPI';
+        const url = '/guzman_final_armamento_ingSoft/configuracion/obtenerConfiguracionAPI';
         const config = {
             method: 'GET'
         };
@@ -184,7 +184,7 @@ const crearRespaldo = async () => {
         BtnRespaldo.disabled = true;
         BtnRespaldo.innerHTML = '<i class="bi bi-hourglass-split me-2"></i>Creando...';
 
-        const url = '/proyecto01/configuracion/crearRespaldoAPI';
+        const url = '/guzman_final_armamento_ingSoft/configuracion/crearRespaldoAPI';
         const config = {
             method: 'POST'
         };

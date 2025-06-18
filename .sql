@@ -1,4 +1,4 @@
-create database proyecto01
+create database guzman_final_armamento_ingSoft
 
 ----------------------------------------------------
 ---------TABLAS CREADAS FUNCIONALES-----------------

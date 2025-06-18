@@ -39,7 +39,7 @@ const actualizarTimestamp = () => {
 
 const cargarGraficoVentasMes = async () => {
     try {
-        const respuesta = await fetch('/proyecto01/reportes/ventasPorMes');
+        const respuesta = await fetch('/guzman_final_armamento_ingSoft/reportes/ventasPorMes');
         const datos = await respuesta.json();
         
         console.log('Datos ventas por mes:', datos);
@@ -141,7 +141,7 @@ const cargarGraficoVentasMes = async () => {
 
 const cargarGraficoEstadoReparaciones = async () => {
     try {
-        const respuesta = await fetch('/proyecto01/reportes/estadoReparaciones');
+        const respuesta = await fetch('/guzman_final_armamento_ingSoft/reportes/estadoReparaciones');
         const datos = await respuesta.json();
         
         console.log('Datos estado reparaciones:', datos);
@@ -208,7 +208,7 @@ const cargarGraficoEstadoReparaciones = async () => {
 
 const cargarGraficoMarcasVendidas = async () => {
     try {
-        const respuesta = await fetch('/proyecto01/reportes/marcasMasVendidas');
+        const respuesta = await fetch('/guzman_final_armamento_ingSoft/reportes/marcasMasVendidas');
         const datos = await respuesta.json();
         
         console.log('Datos marcas más vendidas:', datos);
@@ -287,7 +287,7 @@ const cargarGraficoMarcasVendidas = async () => {
 
 const cargarGraficoInventarioEstado = async () => {
     try {
-        const respuesta = await fetch('/proyecto01/reportes/inventarioPorEstado');
+        const respuesta = await fetch('/guzman_final_armamento_ingSoft/reportes/inventarioPorEstado');
         const datos = await respuesta.json();
         
         console.log('Datos inventario por estado:', datos);
@@ -352,7 +352,7 @@ const cargarGraficoInventarioEstado = async () => {
 
 const cargarMetricasPrincipales = async () => {
     try {
-        const respuesta = await fetch('/proyecto01/reportes/estadisticasGenerales');
+        const respuesta = await fetch('/guzman_final_armamento_ingSoft/reportes/estadisticasGenerales');
         const datos = await respuesta.json();
         
         console.log('Métricas recibidas:', datos);

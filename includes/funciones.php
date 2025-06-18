@@ -17,7 +17,7 @@ function s($html) {
 function isAuth() {
     session_start();
     if(!isset($_SESSION['login'])) {
-        header('Location: /proyecto01/');
+        header('Location: /guzman_final_armamento_ingSoft/');
     }
 }
 function isAuthApi() {
@@ -36,7 +36,7 @@ function isAuthApi() {
 function isNotAuth(){
     session_start();
     if(isset($_SESSION['login'])) {
-        header('Location: /proyecto01/inicio');
+        header('Location: /guzman_final_armamento_ingSoft/inicio');
     }
 }
 
@@ -45,14 +45,14 @@ function hasPermission(array $roles_permitidos){
     session_start();
     
     if(!isset($_SESSION['login']) || !isset($_SESSION['rol'])) {
-        header('Location: /proyecto01/');
+        header('Location: /guzman_final_armamento_ingSoft/');
         exit;
     }
 
     $rol_usuario = $_SESSION['rol'];
     
     if(!in_array($rol_usuario, $roles_permitidos)) {
-        header('Location: /proyecto01/inicio');
+        header('Location: /guzman_final_armamento_ingSoft/inicio');
         exit;
     }
 }

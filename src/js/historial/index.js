@@ -18,7 +18,7 @@ let historialCargado = false;
 // FUNCIÓN PARA CARGAR USUARIOS EN FILTRO
 const cargarUsuarios = async () => {
     try {
-        const respuesta = await fetch('/proyecto01/historial/obtenerUsuariosAPI');
+        const respuesta = await fetch('/guzman_final_armamento_ingSoft/historial/obtenerUsuariosAPI');
         const datos = await respuesta.json();
         
         if (datos.codigo === 1) {
@@ -40,7 +40,7 @@ const cargarUsuarios = async () => {
 // FUNCIÓN PARA CARGAR MÓDULOS EN FILTRO
 const cargarModulos = async () => {
     try {
-        const respuesta = await fetch('/proyecto01/historial/obtenerModulosAPI');
+        const respuesta = await fetch('/guzman_final_armamento_ingSoft/historial/obtenerModulosAPI');
         const datos = await respuesta.json();
         
         if (datos.codigo === 1) {
@@ -78,7 +78,7 @@ const buscarHistorial = async () => {
         if (modulo) params.append('modulo', modulo);
         if (limite) params.append('limite', limite);
 
-        const url = `/proyecto01/historial/buscarHistorialAPI?${params.toString()}`;
+        const url = `/guzman_final_armamento_ingSoft/historial/buscarHistorialAPI?${params.toString()}`;
         const respuesta = await fetch(url);
         const datos = await respuesta.json();
 

@@ -228,7 +228,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <a class="navbar-brand" href="/proyecto01/inicio">
+            <a class="navbar-brand" href="/guzman_final_armamento_ingSoft/inicio">
                 <img src="<?= asset('./images/cit.png') ?>" width="32" height="32" alt="CIT">
                 Sistema de Celulares
             </a>
@@ -237,7 +237,7 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                     <li class="nav-item">
-                        <a class="nav-link" href="/proyecto01/inicio">
+                        <a class="nav-link" href="/guzman_final_armamento_ingSoft/inicio">
                             <i class="bi bi-house me-2"></i>Inicio
                         </a>
                     </li>
@@ -246,33 +246,33 @@
                     <?php if (isset($_SESSION['login'])): ?>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="/proyecto01/clientes">
+                            <a class="nav-link" href="/guzman_final_armamento_ingSoft/clientes">
                                 <i class="bi bi-people me-2"></i>Clientes
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="/proyecto01/marcas">
+                            <a class="nav-link" href="/guzman_final_armamento_ingSoft/marcas">
                                 <i class="bi bi-phone me-2"></i>Marcas
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="/proyecto01/inventario">
+                            <a class="nav-link" href="/guzman_final_armamento_ingSoft/inventario">
                                 <i class="bi bi-box-seam me-2"></i>Inventario
                             </a>
                         </li>
 
                         <?php if ($_SESSION['rol'] === 'ADMIN'): ?>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="/proyecto01/ventas">
+                                <a class="nav-link" aria-current="page" href="/guzman_final_armamento_ingSoft/ventas">
                                     <i class="bi bi-cart3 me-2"></i>Ventas
                                 </a>
                             </li>
                         <?php endif; ?>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="/proyecto01/reparaciones">
+                            <a class="nav-link" href="/guzman_final_armamento_ingSoft/reparaciones">
                                 <i class="bi bi-tools me-2"></i>Reparaciones
                             </a>
                         </li>
@@ -285,22 +285,22 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a class="dropdown-item" href="/proyecto01/usuarios">
+                                        <a class="dropdown-item" href="/guzman_final_armamento_ingSoft/usuarios">
                                             <i class="bi bi-person-gear me-2"></i>Usuarios
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="/proyecto01/historial">
+                                        <a class="dropdown-item" href="/guzman_final_armamento_ingSoft/historial">
                                             <i class="bi bi-clock-history me-2"></i>Historial de Actividades
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="/proyecto01/reportes">
+                                        <a class="dropdown-item" href="/guzman_final_armamento_ingSoft/reportes">
                                             <i class="bi bi-file-text me-2"></i>Reportes
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="/proyecto01/configuracion">
+                                        <a class="dropdown-item" href="/guzman_final_armamento_ingSoft/configuracion">
                                             <i class="bi bi-sliders me-2"></i>Configuración
                                         </a>
                                     </li>
@@ -325,7 +325,7 @@
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end">
                                 <li>
-                                    <a class="dropdown-item" href="/proyecto01/perfil">
+                                    <a class="dropdown-item" href="/guzman_final_armamento_ingSoft/perfil">
                                         <i class="bi bi-person me-2"></i>Mi Perfil
                                     </a>
                                 </li>
@@ -333,7 +333,7 @@
                                     <hr class="dropdown-divider">
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="/proyecto01/logout">
+                                    <a class="dropdown-item" href="/guzman_final_armamento_ingSoft/logout">
                                         <i class="bi bi-box-arrow-right me-2"></i>Cerrar Sesión
                                     </a>
                                 </li>
@@ -369,7 +369,7 @@
         <?php if (isset($_SESSION['login'])): ?>
             setInterval(async () => {
                 try {
-                    const respuesta = await fetch('/proyecto01/verificarSesion');
+                    const respuesta = await fetch('/guzman_final_armamento_ingSoft/verificarSesion');
                     const datos = await respuesta.json();
 
                     if (datos.codigo === 0) {
@@ -385,7 +385,7 @@
                         document.body.appendChild(notification);
 
                         setTimeout(() => {
-                            window.location.href = '/proyecto01/';
+                            window.location.href = '/guzman_final_armamento_ingSoft/';
                         }, 2000);
                     }
                 } catch (error) {

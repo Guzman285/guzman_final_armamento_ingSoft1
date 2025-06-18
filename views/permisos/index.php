@@ -66,9 +66,9 @@
                         <div class="row justify-content-center mt-4">
                             <div class="col-auto">
                                 <p class="text-center text-muted">
-                                    <a href="/proyecto01/registro" class="text-primary fw-bold">Gestionar Usuarios</a> | 
-                                    <a href="/proyecto01/aplicaciones" class="text-primary fw-bold">Gestionar Aplicaciones</a> |
-                                    <a href="/proyecto01/login" class="text-primary fw-bold">Cerrar Sesión</a>
+                                    <a href="/guzman_final_armamento_ingSoft/registro" class="text-primary fw-bold">Gestionar Usuarios</a> | 
+                                    <a href="/guzman_final_armamento_ingSoft/aplicaciones" class="text-primary fw-bold">Gestionar Aplicaciones</a> |
+                                    <a href="/guzman_final_armamento_ingSoft/login" class="text-primary fw-bold">Cerrar Sesión</a>
                                 </p>
                             </div>
                         </div>

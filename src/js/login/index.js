@@ -75,7 +75,7 @@ const login = async (e) => {
 
     try {
         const body = new FormData(FormLogin);
-        const url = '/proyecto01/API/login';
+        const url = '/guzman_final_armamento_ingSoft/API/login';
         const config = {
             method: 'POST',
             body
@@ -172,7 +172,7 @@ usuPassword.addEventListener('keypress', (e) => {
 // Verificar sesión cada 5 minutos
 setInterval(async () => {
     try {
-        const respuesta = await fetch('/proyecto01/verificarSesion');
+        const respuesta = await fetch('/guzman_final_armamento_ingSoft/verificarSesion');
         const datos = await respuesta.json();
 
         if (datos.codigo === 0) {
@@ -182,7 +182,7 @@ setInterval(async () => {
                 text: 'Su sesión ha expirado. Será redirigido al login.',
                 confirmButtonText: 'Entendido'
             });
-            window.location.href = '/proyecto01/';
+            window.location.href = '/guzman_final_armamento_ingSoft/';
         }
     } catch (error) {
         console.error('Error verificando sesión:', error);

@@ -1,7 +1,7 @@
 <?php
 // Verificar autenticación
 if (!isset($_SESSION['login'])) {
-    header('Location: /proyecto01/');
+    header('Location: /guzman_final_armamento_ingSoft/');
     exit;
 }
 ?>
@@ -27,7 +27,7 @@ if (!isset($_SESSION['login'])) {
                         <div class="card-body text-center p-4">
                             <h5>Clientes</h5>
                             <p class="text-muted small">Gestionar clientes</p>
-                            <a href="/proyecto01/clientes" class="btn btn-outline-primary btn-sm">
+                            <a href="/guzman_final_armamento_ingSoft/clientes" class="btn btn-outline-primary btn-sm">
                                 Acceder
                             </a>
                         </div>
@@ -39,7 +39,7 @@ if (!isset($_SESSION['login'])) {
                         <div class="card-body text-center p-4">
                             <h5>Marcas</h5>
                             <p class="text-muted small">Catálogo de marcas</p>
-                            <a href="/proyecto01/marcas" class="btn btn-outline-success btn-sm">
+                            <a href="/guzman_final_armamento_ingSoft/marcas" class="btn btn-outline-success btn-sm">
                                 Acceder
                             </a>
                         </div>
@@ -51,7 +51,7 @@ if (!isset($_SESSION['login'])) {
                         <div class="card-body text-center p-4">
                             <h5>Inventario</h5>
                             <p class="text-muted small">Control de stock</p>
-                            <a href="/proyecto01/inventario" class="btn btn-outline-warning btn-sm">
+                            <a href="/guzman_final_armamento_ingSoft/inventario" class="btn btn-outline-warning btn-sm">
                                 Acceder
                             </a>
                         </div>
@@ -67,7 +67,7 @@ if (!isset($_SESSION['login'])) {
                         <div class="card-body text-center p-4">
                             <h5>Administración</h5>
                             <p class="text-muted small">Panel de control</p>
-                            <a href="/proyecto01/admin" class="btn btn-dark btn-sm">
+                            <a href="/guzman_final_armamento_ingSoft/admin" class="btn btn-dark btn-sm">
                                 Acceder
                             </a>
                         </div>
@@ -79,7 +79,7 @@ if (!isset($_SESSION['login'])) {
                         <div class="card-body text-center p-4">
                             <h5>Reportes</h5>
                             <p class="text-muted small">Estadísticas del sistema</p>
-                            <a href="/proyecto01/reportes" class="btn btn-secondary btn-sm">
+                            <a href="/guzman_final_armamento_ingSoft/reportes" class="btn btn-secondary btn-sm">
                                 Acceder
                             </a>
                         </div>

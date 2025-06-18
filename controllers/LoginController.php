@@ -111,7 +111,7 @@ class LoginController extends ActiveRecord
                 'datos' => [
                     'usuario_id' => $usuario->usuario_id,
                     'nombre_completo' => $usuario->usuario_nom1 . ' ' . $usuario->usuario_ape1,
-                    'redirect_url' => '/proyecto01/'
+                    'redirect_url' => '/guzman_final_armamento_ingSoft/'
                 ]
             ]);
 
@@ -134,7 +134,7 @@ class LoginController extends ActiveRecord
             setcookie(session_name(), '', time() - 3600, '/');
         }
         
-        header('Location: /proyecto01/login');
+        header('Location: /guzman_final_armamento_ingSoft/login');
         exit;
     }
     
@@ -148,7 +148,7 @@ class LoginController extends ActiveRecord
             echo json_encode([
                 'codigo' => 0,
                 'mensaje' => 'Sesión no válida',
-                'redirect_url' => '/proyecto01/login'
+                'redirect_url' => '/guzman_final_armamento_ingSoft/login'
             ]);
             return;
         }
@@ -159,7 +159,7 @@ class LoginController extends ActiveRecord
             echo json_encode([
                 'codigo' => 0,
                 'mensaje' => 'Sesión expirada',
-                'redirect_url' => '/proyecto01/login'
+                'redirect_url' => '/guzman_final_armamento_ingSoft/login'
             ]);
             return;
         }

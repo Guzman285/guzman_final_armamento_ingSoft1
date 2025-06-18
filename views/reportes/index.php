@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['login'])) {
-    header('Location: /proyecto01/');
+    header('Location: /guzman_final_armamento_ingSoft/');
     exit;
 }
 $esAdmin = $_SESSION['rol'] === 'ADMIN';

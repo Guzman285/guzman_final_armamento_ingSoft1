@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Función para cargar aplicaciones en el select
 const cargarAplicaciones = async () => {
     try {
-        const respuesta = await fetch('/proyecto01/permisos/buscarAplicacionesAPI');
+        const respuesta = await fetch('/guzman_final_armamento_ingSoft/permisos/buscarAplicacionesAPI');
         const data = await respuesta.json();
         
         if (data.codigo === 1) {
@@ -105,7 +105,7 @@ const guardarPermiso = async (e) => {
     
     try {
         const body = new FormData(formPermiso);
-        const respuesta = await fetch('/proyecto01/permisos/guardar', {
+        const respuesta = await fetch('/guzman_final_armamento_ingSoft/permisos/guardar', {
             method: 'POST',
             body
         });
@@ -149,7 +149,7 @@ const buscarPermisos = async () => {
         btnBuscarPermisos.disabled = true;
         btnBuscarPermisos.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Cargando...';
         
-        const respuesta = await fetch('/proyecto01/permisos/buscarAPI');
+        const respuesta = await fetch('/guzman_final_armamento_ingSoft/permisos/buscarAPI');
         const data = await respuesta.json();
         
         if (data.codigo === 1) {
@@ -297,7 +297,7 @@ const modificarPermiso = async (e) => {
     
     try {
         const body = new FormData(formPermiso);
-        const respuesta = await fetch('/proyecto01/permisos/modificarAPI', {
+        const respuesta = await fetch('/guzman_final_armamento_ingSoft/permisos/modificarAPI', {
             method: 'POST',
             body
         });
@@ -336,7 +336,7 @@ const eliminarPermiso = async (e) => {
     
     if (confirmacion.isConfirmed) {
         try {
-            const respuesta = await fetch(`/proyecto01/permisos/eliminarAPI?id=${id}`);
+            const respuesta = await fetch(`/guzman_final_armamento_ingSoft/permisos/eliminarAPI?id=${id}`);
             const data = await respuesta.json();
             
             if (data.codigo === 1) {

@@ -32,7 +32,7 @@
               <div class="d-flex justify-content-center text-center mt-4 pt-1">
                 <p class="text-white-50 mb-0">
                   ¿No tienes cuenta? 
-                  <a href="/proyecto01/registro" class="text-white">Regístrate aquí</a>
+                  <a href="/guzman_final_armamento_ingSoft/registro" class="text-white">Regístrate aquí</a>
                 </p>
               </div>
 

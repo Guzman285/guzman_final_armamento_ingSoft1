@@ -2,7 +2,7 @@
 // Verificar autenticación y permisos de administrador
 session_start();
 if (!isset($_SESSION['login']) || $_SESSION['rol'] !== 'ADMIN') {
-    header('Location: /proyecto01/');
+    header('Location: /guzman_final_armamento_ingSoft/');
     exit;
 }
 ?>

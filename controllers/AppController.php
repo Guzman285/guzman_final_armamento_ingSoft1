@@ -91,7 +91,7 @@ class AppController extends ActiveRecord
                         'datos' => [
                             'usuario_nombre' => $nombreUser,
                             'rol' => $_SESSION['rol'],
-                            'redirect_url' => '/proyecto01/inicio'
+                            'redirect_url' => '/guzman_final_armamento_ingSoft/inicio'
                         ]
                     ]);
                 } else {
@@ -128,7 +128,7 @@ class AppController extends ActiveRecord
             echo json_encode([
                 'codigo' => 0,
                 'mensaje' => 'Sesión no válida',
-                'redirect_url' => '/proyecto01/'
+                'redirect_url' => '/guzman_final_armamento_ingSoft/'
             ]);
             return;
         }
@@ -139,7 +139,7 @@ class AppController extends ActiveRecord
             echo json_encode([
                 'codigo' => 0,
                 'mensaje' => 'Sesión expirada',
-                'redirect_url' => '/proyecto01/'
+                'redirect_url' => '/guzman_final_armamento_ingSoft/'
             ]);
             return;
         }
@@ -178,7 +178,7 @@ class AppController extends ActiveRecord
             setcookie(session_name(), '', time() - 3600, '/');
         }
 
-        header('Location: /proyecto01/');
+        header('Location: /guzman_final_armamento_ingSoft/');
         exit;
     }
 
@@ -188,7 +188,7 @@ class AppController extends ActiveRecord
 
         // Verificar si hay sesión activa
         if (!isset($_SESSION['login'])) {
-            header('Location: /proyecto01/');
+            header('Location: /guzman_final_armamento_ingSoft/');
             exit;
         }
 
